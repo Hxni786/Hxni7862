@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="auto">
+  <defs>
+    <!-- Gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#00ff9c" stop-opacity="0.08" />
+      <stop offset="60%" stop-color="#030303" stop-opacity="0" />
+    </radialGradient>
+    
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff9c" />
+      <stop offset="50%" stop-color="#00c8ff" />
+      <stop offset="100%" stop-color="#00ff9c" />
+    </linearGradient>
+
+    <linearGradient id="gridFade" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00ff9c" stop-opacity="0.15" />
+      <stop offset="70%" stop-color="#00ff9c" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Scanline Filter -->
+    <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1.5" opacity="0.4" />
+    </pattern>
+
+    <!-- Wireframe grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#121815" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 8px rgba(0,255,156,0.3)); }
+      50% { opacity: 1; filter: drop-shadow(0 0 20px rgba(0,255,156,0.6)); }
+    }
+    @keyframes scanMove {
+      0% { transform: translateY(-100px); }
+      100% { transform: translateY(360px); }
+    }
+    @keyframes blinkCursor {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+      50% { transform: translateY(-12px) translateX(8px); opacity: 0.8; }
+      100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+    }
+    .hud-title {
+      font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 900;
+      letter-spacing: 14px;
+      fill: #ffffff;
+      animation: pulseGlow 4s ease-in-out infinite;
+    }
+    .mono-text {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      fill: #737373;
+    }
+    .accent-mono {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 11px;
+      letter-spacing: 2px;
+      fill: #00ff9c;
+    }
+    .scan-beam {
+      animation: scanMove 6s linear infinite;
+    }
+    .cursor {
+      animation: blinkCursor 1s infinite;
+    }
+    .particle {
+      animation: floatParticle 5s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Background Void -->
+  <rect width="1200" height="360" fill="#030303" rx="12" />
+  <rect width="1200" height="360" fill="url(#bgGlow)" rx="12" />
+  <rect width="1200" height="360" fill="url(#grid)" opacity="0.7" rx="12" />
+
+  <!-- Outer Tech Border Frame -->
+  <rect x="12" y="12" width="1176" height="336" fill="none" stroke="#151d18" stroke-width="1.5" rx="8" />
+  <rect x="16" y="16" width="1168" height="332" fill="none" stroke="#00ff9c" stroke-width="1" opacity="0.15" rx="6" />
+
+  <!-- Corner Brackets -->
+  <path d="M 12 40 L 12 12 L 40 12" fill="none" stroke="#00ff9c" stroke-width="2.5" />
+  <path d="M 1188 40 L 1188 12 L 1160 12" fill="none" stroke="#00ff9c" stroke-width="2.5" />
+  <path d="M 12 320 L 12 348 L 40 348" fill="none" stroke="#00ff9c" stroke-width="2.5" />
+  <path d="M 1188 320 L 1188 348 L 1160 348" fill="none" stroke="#00ff9c" stroke-width="2.5" />
+
+  <!-- Top Telemetry Bar -->
+  <line x1="36" y1="44" x2="1164" y2="44" stroke="#16221c" stroke-width="1" />
+  <circle cx="48" cy="44" r="3" fill="#00ff9c" />
+  <text x="64" y="48" class="accent-mono">SYS // RECON 01</text>
+  <text x="240" y="48" class="mono-text">NODE: 786-ALPHA</text>
+  <text x="440" y="48" class="mono-text">LATENCY: 0.08MS</text>
+  <text x="880" y="48" class="mono-text">SEC-LEVEL: RESTRICTED</text>
+  <circle cx="1144" cy="44" r="4" fill="#00ff9c" class="cursor" />
+
+  <!-- Floating Optical Particles -->
+  <circle cx="280" cy="120" r="1.5" fill="#00ff9c" class="particle" style="animation-delay: 0s;" />
+  <circle cx="920" cy="140" r="2" fill="#00c8ff" class="particle" style="animation-delay: 1.5s;" />
+  <circle cx="380" cy="240" r="1.5" fill="#00ff9c" class="particle" style="animation-delay: 2.2s;" />
+  <circle cx="840" cy="230" r="1.8" fill="#00ff9c" class="particle" style="animation-delay: 0.8s;" />
+
+  <!-- Center Monolith Heading -->
+  <g transform="translate(600, 160)">
+    <!-- Ambient back glow for text -->
+    <ellipse cx="0" cy="-5" rx="280" ry="45" fill="#00ff9c" opacity="0.06" />
+    
+    <!-- Large Branding Text -->
+    <text x="0" y="0" text-anchor="middle" font-size="64" class="hud-title">HXNI</text>
+    
+    <!-- Subtitle Line -->
+    <line x1="-220" y1="26" x2="220" y2="26" stroke="url(#emeraldGrad)" stroke-width="1.5" opacity="0.6" />
+    <circle cx="0" cy="26" r="3" fill="#00ff9c" />
+
+    <text x="0" y="52" text-anchor="middle" class="accent-mono" font-size="13" letter-spacing="8px">THE CIPHER STACK</text>
+    <text x="0" y="78" text-anchor="middle" class="mono-text" font-size="10.5" letter-spacing="3.5px">CREATIVE DEVELOPMENT • FULL-STACK ENGINEERING • 3D WEB EXPERIENCES</text>
+  </g>
+
+  <!-- Scanning Light Beam -->
+  <g class="scan-beam" opacity="0.3">
+    <line x1="16" y1="0" x2="1184" y2="0" stroke="#00ff9c" stroke-width="1.5" />
+    <rect x="16" y="0" width="1168" height="24" fill="url(#gridFade)" opacity="0.35" />
+  </g>
+
+  <!-- Bottom Terminal Status Bar -->
+  <line x1="36" y1="306" x2="1164" y2="306" stroke="#16221c" stroke-width="1" />
+  <text x="44" y="326" class="accent-mono">STATUS: SYSTEM INITIALIZED</text>
+  <text x="320" y="326" class="mono-text">CONNECTION ESTABLISHED</text>
+  <text x="580" y="326" class="mono-text">IDENTITY: VERIFIED</text>
+  <text x="820" y="326" class="accent-mono">ACCESS LEVEL: CREATIVE</text>
+  <rect x="1055" y="316" width="8" height="13" fill="#00ff9c" class="cursor" />
+
+  <!-- Texture overlay -->
+  <rect width="1200" height="360" fill="url(#scanlines)" pointer-events="none" />
+</svg>

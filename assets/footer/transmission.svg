@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="auto">
+  <defs>
+    <radialGradient id="fadeDark" cx="50%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#00ff9c" stop-opacity="0.08" />
+      <stop offset="60%" stop-color="#030303" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+    <linearGradient id="beamFade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ff9c" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes fadeTerminal {
+      0%, 100% { opacity: 0.9; }
+      50% { opacity: 0.4; }
+    }
+    .cinematic-title {
+      font-family: 'Space Grotesk', -apple-system, sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 12px;
+      fill: #ffffff;
+    }
+    .status-line {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 4px;
+      fill: #737373;
+    }
+    .exit-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 6px;
+      fill: #00ff9c;
+      animation: fadeTerminal 3s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Background Void -->
+  <rect width="1200" height="320" fill="#000000" rx="12" />
+  <rect width="1200" height="320" fill="url(#fadeDark)" rx="12" />
+  
+  <!-- Outer Frame -->
+  <rect x="12" y="12" width="1176" height="296" fill="none" stroke="#121714" stroke-width="1.5" rx="8" />
+
+  <!-- Dissolving Cipher Core Symbol -->
+  <g transform="translate(600, 75)" opacity="0.4">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#00ff9c" stroke-width="1" stroke-dasharray="2,6" />
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#00c8ff" stroke-width="0.8" />
+    <circle cx="0" cy="0" r="8" fill="#00ff9c" opacity="0.6" />
+    <!-- Ticks -->
+    <line x1="-55" y1="0" x2="-45" y2="0" stroke="#00ff9c" stroke-width="1" />
+    <line x1="45" y1="0" x2="55" y2="0" stroke="#00ff9c" stroke-width="1" />
+  </g>
+
+  <!-- Center Closing Text -->
+  <g transform="translate(600, 160)">
+    <text x="0" y="0" text-anchor="middle" class="cinematic-title">END OF TRANSMISSION</text>
+    <line x1="-180" y1="20" x2="180" y2="20" stroke="#1c2b22" stroke-width="1" />
+    
+    <text x="0" y="48" text-anchor="middle" class="status-line">SESSION TERMINATED // CONNECTION CLOSED</text>
+    <text x="0" y="78" text-anchor="middle" class="exit-tag">SEE YOU ON THE OTHER SIDE.</text>
+  </g>
+
+  <!-- Corner Brackets -->
+  <path d="M 12 36 L 12 12 L 36 12" fill="none" stroke="#1c2b22" stroke-width="2" />
+  <path d="M 1188 36 L 1188 12 L 1164 12" fill="none" stroke="#1c2b22" stroke-width="2" />
+  <path d="M 12 284 L 12 308 L 36 308" fill="none" stroke="#1c2b22" stroke-width="2" />
+  <path d="M 1188 284 L 1188 308 L 1164 308" fill="none" stroke="#1c2b22" stroke-width="2" />
+</svg>

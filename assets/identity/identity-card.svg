@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 380" width="100%" height="auto">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0f11" />
+      <stop offset="50%" stop-color="#08090a" />
+      <stop offset="100%" stop-color="#030404" />
+    </linearGradient>
+
+    <linearGradient id="edgeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff9c" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#00c8ff" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00ff9c" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="avatarBackdrop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1712" />
+      <stop offset="100%" stop-color="#020504" />
+    </linearGradient>
+
+    <pattern id="cardGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#121815" stroke-width="0.75" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseActive {
+      0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px #00ff9c); }
+      50% { opacity: 0.35; filter: drop-shadow(0 0 1px #00ff9c); }
+    }
+    @keyframes sweepLine {
+      0% { transform: translateY(0px); opacity: 0.2; }
+      50% { opacity: 0.7; }
+      100% { transform: translateY(240px); opacity: 0.2; }
+    }
+    .status-dot {
+      animation: pulseActive 2s infinite ease-in-out;
+    }
+    .sweep {
+      animation: sweepLine 4s linear infinite;
+    }
+    .header-text {
+      font-family: 'Space Grotesk', -apple-system, sans-serif;
+      font-weight: 800;
+      fill: #ffffff;
+      letter-spacing: 4px;
+    }
+    .label-mono {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 2px;
+      fill: #737373;
+    }
+    .val-mono {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      fill: #f2f2f2;
+    }
+    .accent-val {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      fill: #00ff9c;
+    }
+    .sec-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      fill: #00c8ff;
+    }
+  </style>
+
+  <!-- Base Card Chassis -->
+  <rect x="8" y="8" width="924" height="364" rx="14" fill="url(#cardBg)" stroke="#1a251e" stroke-width="1.5" />
+  <rect x="8" y="8" width="924" height="364" rx="14" fill="url(#cardGrid)" opacity="0.45" />
+
+  <!-- Top Accent Edge Line -->
+  <path d="M 28 8 L 912 8" stroke="url(#edgeGlow)" stroke-width="2.5" />
+  
+  <!-- Outer Corner Brackets -->
+  <path d="M 8 38 L 8 8 L 38 8" fill="none" stroke="#00ff9c" stroke-width="2.5" />
+  <path d="M 932 38 L 932 8 L 902 8" fill="none" stroke="#00ff9c" stroke-width="2.5" />
+  <path d="M 8 342 L 8 372 L 38 372" fill="none" stroke="#00ff9c" stroke-width="2.5" />
+  <path d="M 932 342 L 932 372 L 902 372" fill="none" stroke="#00ff9c" stroke-width="2.5" />
+
+  <!-- Header Strip -->
+  <g transform="translate(36, 38)">
+    <text x="0" y="0" class="sec-tag">CLASSIFIED DEVELOPER IDENTITY CARD // LEVEL 5 ACCESS</text>
+    <line x1="0" y1="12" x2="868" y2="12" stroke="#18271e" stroke-width="1" />
+  </g>
+
+  <!-- Left: Avatar Biometric Frame -->
+  <g transform="translate(36, 68)">
+    <!-- Photo Frame -->
+    <rect x="0" y="0" width="230" height="260" rx="8" fill="url(#avatarBackdrop)" stroke="#00ff9c" stroke-width="1.2" stroke-opacity="0.6" />
+    
+    <!-- Silhouette Graphic -->
+    <!-- Head & Shoulders -->
+    <circle cx="115" cy="95" r="42" fill="#050a08" stroke="#00ff9c" stroke-width="1.5" stroke-opacity="0.8" />
+    <path d="M 45 225 C 45 155, 185 155, 185 225 Z" fill="#050a08" stroke="#00ff9c" stroke-width="1.5" stroke-opacity="0.8" />
+    <!-- Subtle Emerald Rim Light on head -->
+    <path d="M 78 85 A 42 42 0 0 1 152 85" fill="none" stroke="#00ff9c" stroke-width="2.5" />
+    
+    <!-- Targeting HUD Overlay -->
+    <circle cx="115" cy="120" r="75" fill="none" stroke="#00c8ff" stroke-width="0.8" stroke-dasharray="4,6" opacity="0.4" />
+    <line x1="25" y1="120" x2="205" y2="120" stroke="#00ff9c" stroke-width="0.8" stroke-dasharray="2,4" opacity="0.3" />
+    <line x1="115" y1="30" x2="115" y2="210" stroke="#00ff9c" stroke-width="0.8" stroke-dasharray="2,4" opacity="0.3" />
+    
+    <!-- Biometric Scan Beam -->
+    <line x1="2" y1="0" x2="228" y2="0" stroke="#00ff9c" stroke-width="1.5" class="sweep" />
+
+    <!-- Avatar Label -->
+    <rect x="0" y="232" width="230" height="28" rx="4" fill="#020403" fill-opacity="0.9" />
+    <text x="115" y="250" text-anchor="middle" class="sec-tag" font-size="9">ID: CIPHER // BIOMETRIC VERIFIED</text>
+  </g>
+
+  <!-- Right: Identity Dossier Details -->
+  <g transform="translate(300, 85)">
+    <!-- Field 1: NAME -->
+    <text x="0" y="16" class="label-mono">NAME</text>
+    <text x="210" y="16" class="header-text" font-size="20">HXNI</text>
+
+    <!-- Field 2: ROLE -->
+    <text x="0" y="56" class="label-mono">ROLE</text>
+    <text x="210" y="56" class="accent-val">CREATIVE DEVELOPER</text>
+
+    <!-- Field 3: SPECIALIZATION -->
+    <text x="0" y="96" class="label-mono">SPECIALIZATION</text>
+    <text x="210" y="96" class="val-mono">FULL-STACK / 3D / INTERACTION</text>
+
+    <!-- Field 4: MODE -->
+    <text x="0" y="136" class="label-mono">MODE</text>
+    <text x="210" y="136" class="val-mono">BUILD • BREAK • REBUILD</text>
+
+    <!-- Field 5: PHILOSOPHY -->
+    <text x="0" y="176" class="label-mono">PHILOSOPHY</text>
+    <text x="210" y="176" class="accent-val" font-size="12">MAKE THE IMPOSSIBLE FEEL INTERACTIVE</text>
+
+    <!-- Separator Line -->
+    <line x1="0" y1="204" x2="600" y2="204" stroke="#16251b" stroke-width="1" />
+
+    <!-- Status Indicator & Barcode -->
+    <g transform="translate(0, 230)">
+      <!-- System Active Dot -->
+      <circle cx="6" cy="-4" r="5" fill="#00ff9c" class="status-dot" />
+      <text x="22" y="0" class="accent-val" font-size="12.5">SYSTEM ACTIVE</text>
+
+      <text x="240" y="0" class="label-mono">KEY: 0x48584E49</text>
+      
+      <!-- Mini Barcode -->
+      <g transform="translate(480, -14)">
+        <line x1="0" y1="0" x2="0" y2="18" stroke="#f2f2f2" stroke-width="2" />
+        <line x1="5" y1="0" x2="5" y2="18" stroke="#f2f2f2" stroke-width="1" />
+        <line x1="9" y1="0" x2="9" y2="18" stroke="#f2f2f2" stroke-width="3" />
+        <line x1="15" y1="0" x2="15" y2="18" stroke="#f2f2f2" stroke-width="1.5" />
+        <line x1="20" y1="0" x2="20" y2="18" stroke="#f2f2f2" stroke-width="4" />
+        <line x1="28" y1="0" x2="28" y2="18" stroke="#f2f2f2" stroke-width="1" />
+        <line x1="33" y1="0" x2="33" y2="18" stroke="#f2f2f2" stroke-width="2.5" />
+        <line x1="40" y1="0" x2="40" y2="18" stroke="#f2f2f2" stroke-width="1.5" />
+        <line x1="46" y1="0" x2="46" y2="18" stroke="#f2f2f2" stroke-width="3" />
+        <line x1="54" y1="0" x2="54" y2="18" stroke="#f2f2f2" stroke-width="1" />
+        <line x1="60" y1="0" x2="60" y2="18" stroke="#f2f2f2" stroke-width="2" />
+        <line x1="66" y1="0" x2="66" y2="18" stroke="#f2f2f2" stroke-width="3.5" />
+        <line x1="74" y1="0" x2="74" y2="18" stroke="#f2f2f2" stroke-width="1" />
+        <line x1="80" y1="0" x2="80" y2="18" stroke="#f2f2f2" stroke-width="2" />
+        <line x1="86" y1="0" x2="86" y2="18" stroke="#f2f2f2" stroke-width="4" />
+        <line x1="95" y1="0" x2="95" y2="18" stroke="#f2f2f2" stroke-width="1" />
+      </g>
+    </g>
+  </g>
+</svg>

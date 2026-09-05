@@ -1,0 +1,6 @@
+# Ignore PDF specification and local caches
+*.pdf
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db

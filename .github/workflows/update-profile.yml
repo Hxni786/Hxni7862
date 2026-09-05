@@ -1,0 +1,40 @@
+name: "Update Cipher Stack Profile Telemetry"
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  telemetry-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Profile Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Contribution & Activity Telemetry Generator
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate-contributions.py
+
+      - name: Commit and Push Telemetry Updates
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/activity/
+          if git diff --staged --quiet; then
+            echo "Telemetry is already synchronized. No changes to commit."
+          else
+            git commit -m "telemetry: sync digital footprint and activity matrix [skip ci]"
+            git push
+          fi
