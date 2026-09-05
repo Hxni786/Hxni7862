@@ -6,14 +6,19 @@
 
 <picture>
   <source media="(max-width: 600px)" srcset="./assets/hero/hero-01-mobile.webp">
-  <img src="./assets/hero/hero-01.webp" width="100%" alt="Monolithic chrome-black HXNI emblem floating in dark void with volumetric haze and subtle emerald emissive rim lighting" />
+  <img src="./assets/hero/hero-01.webp" width="100%" alt="Ultra-cinematic 3D render of a mysterious elite hacker at a high-tech workstation with curved holographic displays, emerald code streams, and 3D architectural models" />
 </picture>
 
 <br/>
 <br/>
 
-<!-- Hero Animated HUD Telemetry Banner -->
+<!-- Monolithic Chrome HXNI Emblem & HUD Telemetry Banner -->
 <img src="./assets/hero/hero.svg" width="100%" alt="HXNI The Cipher Stack - Cinematic HUD Telemetry Banner" />
+
+<br/>
+<br/>
+
+<img src="./assets/hero/hero-emblem.webp" width="70%" alt="Monolithic chrome-black HXNI emblem floating in dark void with volumetric haze and emerald rim light" />
 
 <br/>
 <br/>
@@ -29,7 +34,7 @@ SYSTEM INITIALIZED // CONNECTION ESTABLISHED // IDENTITY VERIFIED // ACCESS LEVE
 <br/>
 
 <a href="#identity">
-  <img src="./assets/identity/cipher-core.gif" width="140" height="140" alt="Abstract 3D HXNI cipher core with slowly rotating concentric orbital rings" />
+  <img src="./assets/identity/cipher-core.gif" width="280" height="280" alt="Abstract 3D HXNI cipher core with slowly rotating concentric orbital rings" />
 </a>
 
 <br/>
@@ -58,13 +63,16 @@ SYSTEM INITIALIZED // CONNECTION ESTABLISHED // IDENTITY VERIFIED // ACCESS LEVE
 
 <table>
   <tr>
-    <td width="30%" align="center" valign="middle" bgcolor="#080808">
-      <img src="./assets/identity/avatar-cipher.webp" width="220" alt="Cinematic anonymous developer silhouette standing in dark digital environment with emerald rim light" />
+    <td width="35%" align="center" valign="middle" bgcolor="#080808">
       <br/>
+      <img src="./assets/identity/avatar-cipher.webp" width="280" alt="Cinematic anonymous developer silhouette standing in dark digital environment with emerald rim light" />
+      <br/><br/>
       <code>OPERATOR // 0x786</code>
+      <br/><br/>
     </td>
-    <td width="70%" valign="middle" bgcolor="#080808">
-      <h3 style="margin: 0;">HXNI // THE CIPHER STACK</h3>
+    <td width="65%" valign="middle" bgcolor="#080808">
+      <h2 style="margin: 0; letter-spacing: 2px;">HXNI // THE CIPHER STACK</h2>
+      <br/>
       <p><b>ROLE:</b> Creative Developer &amp; Full-Stack Systems Architect</p>
       <p><b>SPECIALIZATION:</b> Full-Stack Web • 3D Interactive Experiences • Motion Design</p>
       <p><b>EXECUTION MODE:</b> <code>BUILD • BREAK • REBUILD</code></p>
@@ -99,7 +107,7 @@ SYSTEM INITIALIZED // CONNECTION ESTABLISHED // IDENTITY VERIFIED // ACCESS LEVE
   <tr>
     <td width="33.3%" align="center" valign="top" bgcolor="#080808">
       <br/>
-      <img src="./assets/identity/cipher-core.svg" width="90" height="90" alt="Interactive Web node" />
+      <img src="./assets/identity/cipher-core.svg" width="180" height="180" alt="Interactive Web node" />
       <h3>01 // INTERACTIVE WEB</h3>
       <p>Fluid, tactile web experiences engineered with micro-interactions, responsive physics, and cinematic performance.</p>
       <code>REACT • NEXT.JS • GSAP</code>
@@ -107,7 +115,7 @@ SYSTEM INITIALIZED // CONNECTION ESTABLISHED // IDENTITY VERIFIED // ACCESS LEVE
     </td>
     <td width="33.3%" align="center" valign="top" bgcolor="#080808">
       <br/>
-      <img src="./assets/activity/activity.svg" width="100" height="90" alt="Full-Stack Systems node" />
+      <img src="./assets/projects/hxnix.webp" width="100%" alt="Full-Stack Systems node" />
       <h3>02 // FULL-STACK SYSTEMS</h3>
       <p>Resilient cloud backends, high-throughput REST APIs, scalable schemas, and enterprise state architectures.</p>
       <code>NODE.JS • EXPRESS • MYSQL</code>
@@ -115,7 +123,7 @@ SYSTEM INITIALIZED // CONNECTION ESTABLISHED // IDENTITY VERIFIED // ACCESS LEVE
     </td>
     <td width="33.3%" align="center" valign="top" bgcolor="#080808">
       <br/>
-      <img src="./assets/projects/the-3d-nexus.webp" width="120" alt="3D Digital Experiences node" />
+      <img src="./assets/projects/the-3d-nexus.webp" width="100%" alt="3D Digital Experiences node" />
       <h3>03 // 3D DIGITAL EXPERIENCES</h3>
       <p>Spatial computing on the web. Custom GLSL shaders, camera choreography, particle simulations, and WebGL pipelines.</p>
       <code>THREE.JS • WEBGL • SHADERS</code>
@@ -149,8 +157,8 @@ CORE ARCHITECTURE // SYSTEM MATRIX DEPLOYED
 <table>
   <thead>
     <tr>
-      <th align="left" width="30%">SYSTEM LAYER</th>
-      <th align="left" width="70%">ACTIVE ARSENAL &amp; PROTOCOLS</th>
+      <th align="left" width="28%">SYSTEM LAYER</th>
+      <th align="left" width="72%">ACTIVE ARSENAL &amp; PROTOCOLS</th>
     </tr>
   </thead>
   <tbody>
@@ -216,17 +224,18 @@ CORE ARCHITECTURE // SYSTEM MATRIX DEPLOYED
 <!-- PROJECT 01 -->
 <table>
   <tr>
-    <td width="46%" align="center" bgcolor="#080808">
+    <td width="55%" align="center" bgcolor="#080808">
       <a href="https://3d-portfolio-main-gold.vercel.app" target="_blank">
         <img src="./assets/projects/the-3d-nexus.webp" width="100%" alt="3D Nexus project visualization - Floating 3D cyber planet with orbital rings" />
       </a>
     </td>
-    <td width="54%" valign="top" bgcolor="#080808">
+    <td width="45%" valign="top" bgcolor="#080808">
       <p><code>CASE FILE // 01</code> &nbsp;|&nbsp; <span style="color:#00ff9c;"><b>ACTIVE DEPLOYMENT</b></span></p>
       <h3>THE 3D NEXUS — INTERACTIVE SHOWCASE</h3>
       <p><b>CATEGORY:</b> Spatial 3D Web • Creative Architecture</p>
       <p><b>TECH:</b> <code>Three.js</code> <code>WebGL</code> <code>GSAP</code> <code>React</code></p>
       <p>A futuristic 3D digital world floating in an infinite black void. Features volumetric orbital rings, particle physics simulations, emerald holographic wireframe grids, and camera choreographies engineered for real-time web rendering.</p>
+      <br/>
       <p>
         <a href="https://github.com/Hxni786/3d-portfolio-main"><b>[INSPECT REPOSITORY]</b></a> &nbsp;&bull;&nbsp;
         <a href="https://3d-portfolio-main-gold.vercel.app"><b>[LAUNCH LIVE DEMO]</b></a>
@@ -240,17 +249,18 @@ CORE ARCHITECTURE // SYSTEM MATRIX DEPLOYED
 <!-- PROJECT 02 -->
 <table>
   <tr>
-    <td width="46%" align="center" bgcolor="#080808">
+    <td width="55%" align="center" bgcolor="#080808">
       <a href="https://github.com/Hxni786/Ticket-Booking-App-2">
         <img src="./assets/projects/ticketverse.webp" width="100%" alt="TicketVerse cinematic project visualization - Holographic vertical event ticket in dark city" />
       </a>
     </td>
-    <td width="54%" valign="top" bgcolor="#080808">
+    <td width="45%" valign="top" bgcolor="#080808">
       <p><code>CASE FILE // 02</code> &nbsp;|&nbsp; <span style="color:#00c8ff;"><b>SYSTEM ONLINE</b></span></p>
       <h3>TICKETVERSE — EVENT ACCESS ENGINE</h3>
       <p><b>CATEGORY:</b> Full-Stack Commerce • Ticketing Infrastructure</p>
       <p><b>TECH:</b> <code>React</code> <code>Node.js</code> <code>Express</code> <code>REST APIs</code></p>
       <p>A luxury event booking and credential issuance platform. Implements real-time seat topology mapping, cryptographic pass validation, session holding locks, and an instant checkout pipeline.</p>
+      <br/>
       <p>
         <a href="https://github.com/Hxni786/Ticket-Booking-App-2"><b>[INSPECT REPOSITORY]</b></a>
       </p>
@@ -263,17 +273,18 @@ CORE ARCHITECTURE // SYSTEM MATRIX DEPLOYED
 <!-- PROJECT 03 -->
 <table>
   <tr>
-    <td width="46%" align="center" bgcolor="#080808">
+    <td width="55%" align="center" bgcolor="#080808">
       <a href="https://github.com/Hxni786/Hxnix-Social-Media-App">
         <img src="./assets/projects/hxnix.webp" width="100%" alt="HXNIX project visualization - Luminous interconnected neural mesh nodes with emerald streams" />
       </a>
     </td>
-    <td width="54%" valign="top" bgcolor="#080808">
+    <td width="45%" valign="top" bgcolor="#080808">
       <p><code>CASE FILE // 03</code> &nbsp;|&nbsp; <span style="color:#00ff9c;"><b>PROTOCOL ACTIVE</b></span></p>
       <h3>HXNIX — NEURAL SOCIAL ECOSYSTEM</h3>
       <p><b>CATEGORY:</b> Social Network Architecture • Real-Time Mesh</p>
       <p><b>TECH:</b> <code>React</code> <code>TypeScript</code> <code>Node.js</code> <code>MongoDB</code></p>
       <p>Decentralized digital community network represented through interconnected luminous nodes and emerald data streams. Engineered with instant websocket feed propagation, user telemetry graph, and dark glass interface components.</p>
+      <br/>
       <p>
         <a href="https://github.com/Hxni786/Hxnix-Social-Media-App"><b>[INSPECT REPOSITORY]</b></a>
       </p>
@@ -286,17 +297,18 @@ CORE ARCHITECTURE // SYSTEM MATRIX DEPLOYED
 <!-- PROJECT 04 -->
 <table>
   <tr>
-    <td width="46%" align="center" bgcolor="#080808">
+    <td width="55%" align="center" bgcolor="#080808">
       <a href="https://github.com/Hxni786/A-food-Delivery-App-hxni-express">
         <img src="./assets/projects/hxni-express.webp" width="100%" alt="HXNI Express project visualization - High-tech delivery capsule over futuristic glowing vector route map" />
       </a>
     </td>
-    <td width="54%" valign="top" bgcolor="#080808">
+    <td width="45%" valign="top" bgcolor="#080808">
       <p><code>CASE FILE // 04</code> &nbsp;|&nbsp; <span style="color:#00c8ff;"><b>DISPATCH OPERATIONAL</b></span></p>
       <h3>HXNI EXPRESS — LOGISTICS ENGINE</h3>
       <p><b>CATEGORY:</b> On-Demand Delivery • Mobile &amp; Cloud Platform</p>
       <p><b>TECH:</b> <code>React Native</code> <code>Node.js</code> <code>Express</code> <code>MySQL</code></p>
       <p>High-throughput food ordering and routing engine. Features real-time GPS telemetry vector mapping, courier dispatch algorithms, relational order management, and cross-platform touch feedback.</p>
+      <br/>
       <p>
         <a href="https://github.com/Hxni786/A-food-Delivery-App-hxni-express"><b>[INSPECT REPOSITORY]</b></a>
       </p>
@@ -309,17 +321,18 @@ CORE ARCHITECTURE // SYSTEM MATRIX DEPLOYED
 <!-- PROJECT 05 -->
 <table>
   <tr>
-    <td width="46%" align="center" bgcolor="#080808">
+    <td width="55%" align="center" bgcolor="#080808">
       <a href="https://github.com/Hxni786/Expense-Tracker-App">
         <img src="./assets/projects/hxni-finance.webp" width="100%" alt="HXNI Finance project visualization - Floating glass financial panels, metallic tokens, and emerald telemetry" />
       </a>
     </td>
-    <td width="54%" valign="top" bgcolor="#080808">
+    <td width="45%" valign="top" bgcolor="#080808">
       <p><code>CASE FILE // 05</code> &nbsp;|&nbsp; <span style="color:#00ff9c;"><b>LEDGER SYNCHRONIZED</b></span></p>
       <h3>HXNI FINANCE — WEALTH TELEMETRY</h3>
       <p><b>CATEGORY:</b> Fintech Ledger • Telemetry Visualization</p>
       <p><b>TECH:</b> <code>React</code> <code>TypeScript</code> <code>Chart.js</code> <code>REST APIs</code></p>
       <p>Minimalist personal capital management environment. Provides floating glass financial panels, spending trend analysis, automated category attribution, and high-precision financial accounting ledgers.</p>
+      <br/>
       <p>
         <a href="https://github.com/Hxni786/Expense-Tracker-App"><b>[INSPECT REPOSITORY]</b></a>
       </p>
@@ -332,17 +345,18 @@ CORE ARCHITECTURE // SYSTEM MATRIX DEPLOYED
 <!-- PROJECT 06 -->
 <table>
   <tr>
-    <td width="46%" align="center" bgcolor="#080808">
+    <td width="55%" align="center" bgcolor="#080808">
       <a href="https://github.com/Hxni786/Hxni-Ecommerce-Store">
         <img src="./assets/projects/bespoke-estore.webp" width="100%" alt="Bespoke E-Store project visualization - Floating designer product monolith with dark glass refraction" />
       </a>
     </td>
-    <td width="54%" valign="top" bgcolor="#080808">
+    <td width="45%" valign="top" bgcolor="#080808">
       <p><code>CASE FILE // 06</code> &nbsp;|&nbsp; <span style="color:#00ff9c;"><b>COMMERCE ONLINE</b></span></p>
       <h3>BESPOKE E-STORE — LUXURY COMMERCE</h3>
       <p><b>CATEGORY:</b> Editorial E-Commerce • Headless Architecture</p>
       <p><b>TECH:</b> <code>Next.js</code> <code>Tailwind CSS</code> <code>Node.js</code> <code>Stripe API</code></p>
       <p>High-end retail storefront built with editorial dark aesthetics. Implements seamless catalog filtering, server-side cart hydration, secure payment processing, and cinematic product showcase transitions.</p>
+      <br/>
       <p>
         <a href="https://github.com/Hxni786/Hxni-Ecommerce-Store"><b>[INSPECT REPOSITORY]</b></a>
       </p>
@@ -355,15 +369,16 @@ CORE ARCHITECTURE // SYSTEM MATRIX DEPLOYED
 <!-- PROJECT 07 -->
 <table>
   <tr>
-    <td width="46%" align="center" bgcolor="#080808">
+    <td width="55%" align="center" bgcolor="#080808">
       <img src="./assets/projects/secret-vault.webp" width="100%" alt="Secret Vault project visualization - Heavy circular mechanical vault door with emerald seam glow" />
     </td>
-    <td width="54%" valign="top" bgcolor="#080808">
+    <td width="45%" valign="top" bgcolor="#080808">
       <p><code>CASE FILE // 07</code> &nbsp;|&nbsp; <span style="color:#ff3b30;"><b>CLASSIFIED // LEVEL 5</b></span></p>
       <h3>SECRET VAULT — CRYPTOGRAPHIC ENCLAVE</h3>
       <p><b>CATEGORY:</b> Zero-Knowledge Auth • Cryptographic Security</p>
       <p><b>TECH:</b> <code>Web Crypto API</code> <code>TypeScript</code> <code>Zero-Knowledge Proofs</code></p>
       <p>Confidential security enclave engineering. Features heavy circular vault mechanics, client-side AES-256-GCM encryption, asymmetric key negotiation, and tamper-evident cryptographic session state.</p>
+      <br/>
       <p>
         <code>STATUS: INTERNAL PROTOCOL // REPOSITORY CLASSIFIED</code>
       </p>
@@ -376,17 +391,18 @@ CORE ARCHITECTURE // SYSTEM MATRIX DEPLOYED
 <!-- PROJECT 08 -->
 <table>
   <tr>
-    <td width="46%" align="center" bgcolor="#080808">
+    <td width="55%" align="center" bgcolor="#080808">
       <a href="https://github.com/Hxni786/Spice-with-Hassan">
         <img src="./assets/projects/spice-with-hassan.webp" width="100%" alt="Spice with Hassan project visualization - Minimalist slate table with culinary dome and emerald coordinates" />
       </a>
     </td>
-    <td width="54%" valign="top" bgcolor="#080808">
+    <td width="45%" valign="top" bgcolor="#080808">
       <p><code>CASE FILE // 08</code> &nbsp;|&nbsp; <span style="color:#00ff9c;"><b>GASTRONOMY PROTOCOL</b></span></p>
       <h3>SPICE WITH HASSAN — DINING INTERFACE</h3>
       <p><b>CATEGORY:</b> Hospitality Platform • Interactive Ordering</p>
       <p><b>TECH:</b> <code>React</code> <code>JavaScript</code> <code>Tailwind CSS</code> <code>Node.js</code></p>
       <p>Refined culinary ordering platform designed for high-end dining experiences. Features real-time kitchen ticket synchronization, custom pairing recommendations, and responsive mobile-first order workflows.</p>
+      <br/>
       <p>
         <a href="https://github.com/Hxni786/Spice-with-Hassan"><b>[INSPECT REPOSITORY]</b></a>
       </p>
